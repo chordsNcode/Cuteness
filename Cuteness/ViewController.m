@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self performSegueWithIdentifier:@"initial" sender:@"mainVC"];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

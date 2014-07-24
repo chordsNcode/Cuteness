@@ -27,14 +27,8 @@
 		6D4239091979C358009DC376 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4238E81979C358009DC376 /* UIKit.framework */; };
 		6D4239111979C358009DC376 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D42390F1979C358009DC376 /* InfoPlist.strings */; };
 		6D4239131979C358009DC376 /* CutenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4239121979C358009DC376 /* CutenessTests.m */; };
-		6DB7C553197C6ABA00DF5CAB /* PostsCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7C552197C6ABA00DF5CAB /* PostsCollectionViewViewController.m */; };
-		6DB7C554197C6ABA00DF5CAB /* PostsCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7C552197C6ABA00DF5CAB /* PostsCollectionViewViewController.m */; };
-		6DB7C558197C6B1700DF5CAB /* PostsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7C557197C6B1700DF5CAB /* PostsCell.m */; };
-		6DB7C559197C6B1700DF5CAB /* PostsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB7C557197C6B1700DF5CAB /* PostsCell.m */; };
-		6DB7C55B197C6B2E00DF5CAB /* PostsCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7C55A197C6B2E00DF5CAB /* PostsCell_iPhone.xib */; };
-		6DB7C55C197C6B2E00DF5CAB /* PostsCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7C55A197C6B2E00DF5CAB /* PostsCell_iPhone.xib */; };
-		6DB7C55E197C6B4200DF5CAB /* PostsCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7C55D197C6B4200DF5CAB /* PostsCell_iPad.xib */; };
-		6DB7C55F197C6B4200DF5CAB /* PostsCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DB7C55D197C6B4200DF5CAB /* PostsCell_iPad.xib */; };
+		6DC563CF1980A9E600083A52 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563CE1980A9E600083A52 /* RedditPost.m */; };
+		6DC563D01980A9E600083A52 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563CE1980A9E600083A52 /* RedditPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +68,7 @@
 		6D42390E1979C358009DC376 /* CutenessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CutenessTests-Info.plist"; sourceTree = "<group>"; };
 		6D4239101979C358009DC376 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D4239121979C358009DC376 /* CutenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CutenessTests.m; sourceTree = "<group>"; };
-		6DB7C551197C6ABA00DF5CAB /* PostsCollectionViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsCollectionViewViewController.h; sourceTree = "<group>"; };
-		6DB7C552197C6ABA00DF5CAB /* PostsCollectionViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsCollectionViewViewController.m; sourceTree = "<group>"; };
-		6DB7C556197C6B1700DF5CAB /* PostsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsCell.h; sourceTree = "<group>"; };
-		6DB7C557197C6B1700DF5CAB /* PostsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsCell.m; sourceTree = "<group>"; };
-		6DB7C55A197C6B2E00DF5CAB /* PostsCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsCell_iPhone.xib; sourceTree = "<group>"; };
-		6DB7C55D197C6B4200DF5CAB /* PostsCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsCell_iPad.xib; sourceTree = "<group>"; };
+		6DC563CE1980A9E600083A52 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
 		CA1E288B454F44D58D31B709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6D25BA4C197CB2F000147905 /* RedditPost.h */,
+				6DC563CE1980A9E600083A52 /* RedditPost.m */,
 				6D25BA50197CB3BA00147905 /* PostUnmarshaller.h */,
 				6D25BA51197CB3BA00147905 /* PostUnmarshaller.m */,
 			);
@@ -209,12 +199,6 @@
 			children = (
 				6D25BA46197C948D00147905 /* Service */,
 				6D25BA4B197CB2D000147905 /* Data Object */,
-				6DB7C551197C6ABA00DF5CAB /* PostsCollectionViewViewController.h */,
-				6DB7C552197C6ABA00DF5CAB /* PostsCollectionViewViewController.m */,
-				6DB7C556197C6B1700DF5CAB /* PostsCell.h */,
-				6DB7C557197C6B1700DF5CAB /* PostsCell.m */,
-				6DB7C55A197C6B2E00DF5CAB /* PostsCell_iPhone.xib */,
-				6DB7C55D197C6B4200DF5CAB /* PostsCell_iPad.xib */,
 			);
 			name = Posts;
 			sourceTree = "<group>";
@@ -297,10 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB7C55B197C6B2E00DF5CAB /* PostsCell_iPhone.xib in Resources */,
 				6D4238FB1979C358009DC376 /* Main_iPad.storyboard in Resources */,
 				6D4239001979C358009DC376 /* Images.xcassets in Resources */,
-				6DB7C55E197C6B4200DF5CAB /* PostsCell_iPad.xib in Resources */,
 				6D4238F81979C358009DC376 /* Main_iPhone.storyboard in Resources */,
 				6D4238EF1979C358009DC376 /* InfoPlist.strings in Resources */,
 			);
@@ -310,8 +292,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB7C55F197C6B4200DF5CAB /* PostsCell_iPad.xib in Resources */,
-				6DB7C55C197C6B2E00DF5CAB /* PostsCell_iPhone.xib in Resources */,
 				6D4239111979C358009DC376 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,12 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D25BA52197CB3BA00147905 /* PostUnmarshaller.m in Sources */,
+				6DC563CF1980A9E600083A52 /* RedditPost.m in Sources */,
 				6D4238FE1979C358009DC376 /* ViewController.m in Sources */,
 				6D25BA49197C94AD00147905 /* PostService.m in Sources */,
-				6DB7C553197C6ABA00DF5CAB /* PostsCollectionViewViewController.m in Sources */,
 				6D4238F51979C358009DC376 /* AppDelegate.m in Sources */,
 				6D4238F11979C358009DC376 /* main.m in Sources */,
-				6DB7C558197C6B1700DF5CAB /* PostsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +350,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4239131979C358009DC376 /* CutenessTests.m in Sources */,
-				6DB7C559197C6B1700DF5CAB /* PostsCell.m in Sources */,
 				6D25BA53197CB3BA00147905 /* PostUnmarshaller.m in Sources */,
-				6DB7C554197C6ABA00DF5CAB /* PostsCollectionViewViewController.m in Sources */,
+				6DC563D01980A9E600083A52 /* RedditPost.m in Sources */,
 				6D25BA4A197C94AD00147905 /* PostService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
