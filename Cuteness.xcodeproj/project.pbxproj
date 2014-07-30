@@ -29,6 +29,10 @@
 		6D4239131979C358009DC376 /* CutenessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4239121979C358009DC376 /* CutenessTests.m */; };
 		6DC563CF1980A9E600083A52 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563CE1980A9E600083A52 /* RedditPost.m */; };
 		6DC563D01980A9E600083A52 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563CE1980A9E600083A52 /* RedditPost.m */; };
+		6DC563D31988945E00083A52 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563D21988945E00083A52 /* SwipeViewController.m */; };
+		6DC563D41988945E00083A52 /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563D21988945E00083A52 /* SwipeViewController.m */; };
+		6DC563D81988951E00083A52 /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563D71988951E00083A52 /* PostView.m */; };
+		6DC563D91988951E00083A52 /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC563D71988951E00083A52 /* PostView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		6D4239101979C358009DC376 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D4239121979C358009DC376 /* CutenessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CutenessTests.m; sourceTree = "<group>"; };
 		6DC563CE1980A9E600083A52 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
+		6DC563D11988945E00083A52 /* SwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		6DC563D21988945E00083A52 /* SwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		6DC563D61988951E00083A52 /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
+		6DC563D71988951E00083A52 /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		CA1E288B454F44D58D31B709 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +167,8 @@
 				6D4238F91979C358009DC376 /* Main_iPad.storyboard */,
 				6D4238FC1979C358009DC376 /* ViewController.h */,
 				6D4238FD1979C358009DC376 /* ViewController.m */,
+				6DC563D11988945E00083A52 /* SwipeViewController.h */,
+				6DC563D21988945E00083A52 /* SwipeViewController.m */,
 				6D4238FF1979C358009DC376 /* Images.xcassets */,
 				6D4238EB1979C358009DC376 /* Supporting Files */,
 			);
@@ -197,10 +207,20 @@
 		6DB7C555197C6AC100DF5CAB /* Posts */ = {
 			isa = PBXGroup;
 			children = (
+				6DC563D51988950400083A52 /* Views */,
 				6D25BA46197C948D00147905 /* Service */,
 				6D25BA4B197CB2D000147905 /* Data Object */,
 			);
 			name = Posts;
+			sourceTree = "<group>";
+		};
+		6DC563D51988950400083A52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DC563D61988951E00083A52 /* PostView.h */,
+				6DC563D71988951E00083A52 /* PostView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +362,8 @@
 				6D25BA49197C94AD00147905 /* PostService.m in Sources */,
 				6D4238F51979C358009DC376 /* AppDelegate.m in Sources */,
 				6D4238F11979C358009DC376 /* main.m in Sources */,
+				6DC563D81988951E00083A52 /* PostView.m in Sources */,
+				6DC563D31988945E00083A52 /* SwipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +373,9 @@
 			files = (
 				6D4239131979C358009DC376 /* CutenessTests.m in Sources */,
 				6D25BA53197CB3BA00147905 /* PostUnmarshaller.m in Sources */,
+				6DC563D91988951E00083A52 /* PostView.m in Sources */,
 				6DC563D01980A9E600083A52 /* RedditPost.m in Sources */,
+				6DC563D41988945E00083A52 /* SwipeViewController.m in Sources */,
 				6D25BA4A197C94AD00147905 /* PostService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
