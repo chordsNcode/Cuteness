@@ -7,23 +7,26 @@
 //
 
 #import "PostService.h"
-#import "PostUnmarshaller.h"
 
 #import <AFNetworking/AFNetworking.h>
 
+
 @interface PostService()
 
-#define urlContext "http://www.reddit.com/"
+
+#define urlContext "http://www.reddit.com/r/"
+
 
 @end
 
+
 @implementation PostService
 
-+ (void)getSubredditDataForSubreddit: (NSString *)subReddit withCompletion:(void (^)(NSArray *posts, NSError *error))completion {
++ (void)getSubredditDataForSubreddit:(NSString *)subReddit withCompletion:(void (^)(NSArray *posts, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    [manager GET:[NSString stringWithFormat:@"%s%@", urlContext, subReddit] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-        NSArray *posts = [PostUnmarshaller unmarshalPostsForDictionary:responseObject];
+    [manager GET:[NSString stringWithFormat:@"%s%@.json", urlContext, subReddit] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        NSArray *posts = responseObject[@"data"][@"children"][@"data"];
         completion(posts, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(nil, error);
@@ -31,14 +34,15 @@
     
 }
 
-+ (void)getRedditPostImageForUrl: (NSString *)imageUrl withCompletion:(void (^)(UIImage *postImage, NSError *error))completion {
++ (void)getRedditPostImageForUrl:(NSString *)imageUrl withCompletion:(void (^)(UIImage *postImage, NSError *error))completion {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    [manager GET:[NSString stringWithFormat:@"%@", imageUrl] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:imageUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         completion(responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(nil, error);
     }];
 }
+
 
 @end

@@ -8,6 +8,15 @@
 
 #import "RedditPost.h"
 
+
 @implementation RedditPost
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"imageUrl" : @"url",
+             @"postUrl" : @"permalink"
+             };
+}
+
 
 @end
