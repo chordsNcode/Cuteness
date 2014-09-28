@@ -26,22 +26,12 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
     [manager GET:[NSString stringWithFormat:@"%s%@.json", urlContext, subReddit] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-        NSArray *posts = responseObject[@"data"][@"children"][@"data"];
+        NSArray *posts = responseObject[@"data"][@"children"];
         completion(posts, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(nil, error);
     }];
     
-}
-
-+ (void)getRedditPostImageForUrl:(NSString *)imageUrl withCompletion:(void (^)(UIImage *postImage, NSError *error))completion {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    
-    [manager GET:imageUrl parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        completion(responseObject, nil);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        completion(nil, error);
-    }];
 }
 
 

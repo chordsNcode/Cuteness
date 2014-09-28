@@ -20,13 +20,5 @@
  */
 + (void)getSubredditDataForSubreddit:(NSString *)subReddit withCompletion:(void (^)(NSArray *posts, NSError *error))completion;
 
-/**
- *  Download the image for a specific reddit post.
- *
- *  @param imageUrl   URL, in string form, of a single post's imageUrl
- *  @param completion The image
- */
-+ (void)getRedditPostImageForUrl:(NSString *)imageUrl withCompletion:(void (^)(UIImage *postImage, NSError *error))completion;
-
 
 @end

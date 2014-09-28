@@ -10,7 +10,7 @@
 #import <Mantle/Mantle.h>
 
 
-@interface RedditPost : NSObject
+@interface RedditPost : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) NSString *postUrl;

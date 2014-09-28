@@ -13,8 +13,10 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"imageUrl" : @"url",
-             @"postUrl" : @"permalink"
+             @"imageUrl" : @"data.url",
+             @"postUrl" : @"data.permalink",
+             @"author" : @"data.author",
+             @"title" : @"data.title"
              };
 }
 

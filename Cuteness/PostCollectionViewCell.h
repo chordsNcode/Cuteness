@@ -11,8 +11,7 @@
 
 @interface PostCollectionViewCell : UICollectionViewCell
 
-
-@property (nonatomic, strong) UIImage *postImage;
+@property (nonatomic, strong) UIImageView *polaroidPicture;
 
 
 @end
