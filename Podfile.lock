@@ -18,14 +18,16 @@ PODS:
   - AFNetworking/UIKit (2.2.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - MDCSwipeToChoose (0.2.1)
+  - Mantle (1.5):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.5)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.3)
-  - MDCSwipeToChoose
+  - Mantle (= 1.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 47947303319594706f48a55185ea95a95159ab94
-  MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
+  Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
 
 COCOAPODS: 0.33.1
